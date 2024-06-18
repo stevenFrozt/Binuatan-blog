@@ -1,94 +1,35 @@
-import React from "react";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerFooter,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+"use client"
+import React from "react"
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-import { Button } from "../ui/button";
-import { Menu } from "lucide-react";
-import Link from "next/link";
+import { Button } from "../ui/button"
+import Link from "next/link"
+import NavBurgerMobile from "./navBurgerMobile"
 
 export default function Navbar() {
-  return (
-    <nav className="flex justify-between p-4 ">
-      <h3 className="hidden md:">BINUATAN</h3>
-      <h3 className="md:hidden">BINUATAN</h3>
+	return (
+		<nav className="flex justify-between items-center bg-white px-6 lg:px-28 py-4 lg:py-4 border">
+			<h3 className="font-medium text-black text-xl tracking-[.5rem]">
+				BINUATAN
+			</h3>
+			<div className="lg:flex gap-8 hidden">
+				<Button asChild variant={"link"} className="p-4 w-full">
+					<Link href={"/"}>Home</Link>
+				</Button>
+				<Button asChild variant={"link"} className="p-4 w-full">
+					<Link href={"products"}>Products</Link>
+				</Button>
+				<Button asChild variant={"link"} className="p-4 w-full">
+					<Link href={"about"}>About Us</Link>
+				</Button>
+				<Button asChild variant={"link"} className="p-4 w-full">
+					<Link href={"news"}>News</Link>
+				</Button>
+				<Button asChild variant={"link"} className="p-4 w-full">
+					<Link href={"contact"}>Contact Us</Link>
+				</Button>
+			</div>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger className="hidden md:inline-block">
-          <Menu />
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          <DropdownMenuItem>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>Home</Link>
-            </Button>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>Products</Link>
-            </Button>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>About Us</Link>
-            </Button>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>News</Link>
-            </Button>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>Contact Us</Link>
-            </Button>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-
-      <Drawer>
-        <DrawerTrigger className="md:hidden">
-          <Menu />
-        </DrawerTrigger>
-
-        <DrawerContent>
-          <div className="py-8">
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>Home</Link>
-            </Button>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>Products</Link>
-            </Button>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>About Us</Link>
-            </Button>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>News</Link>
-            </Button>
-            <Button asChild variant={"link"} className="w-full p-4 ">
-              <Link href={""}>Contact Us</Link>
-            </Button>
-          </div>
-          <DrawerFooter>
-            <DrawerClose>
-              <Button variant="outline">Cancel</Button>
-            </DrawerClose>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
-    </nav>
-  );
+			<NavBurgerMobile />
+		</nav>
+	)
 }
