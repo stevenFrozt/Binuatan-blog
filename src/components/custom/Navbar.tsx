@@ -14,7 +14,7 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className="flex justify-between items-center bg-white px-6 lg:px-28 py-4 lg:py-4 border">
+		<nav className="flex justify-between items-center bg-white px-6 lg:px-52 py-4 lg:py-4 border">
 			<h3 className="font-medium text-black text-xl tracking-[.5rem]">
 				BINUATAN
 			</h3>
