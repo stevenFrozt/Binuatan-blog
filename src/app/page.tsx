@@ -1,24 +1,21 @@
-import Card from "@/components/custom/Card"
+import React from "react";
+import About from "@/app/about/page";
+import Cardinfo from "@/components/custom/Cardinfo";
 
-export default function Home() {
-	return (
-		<main className="px-6 lg:px-52 p-4">
-			{/* LANDING PAGE */}
-			<section className="border min-h-[100vh]">
-				LANDING AKO
-			</section>
-			{/* PRODUCT GRID show only 6 */}
-			<section>
-				<div className="gap-8 grid grid-cols-3 w-full">
-					<Card />
-					<Card />
-					<Card />
-					<Card />
-					<Card />
-					<Card />
-					{/* TODO: View More */}
-				</div>
-			</section>
-		</main>
-	)
-}
+const Home: React.FC = () => {
+  return (
+    <main className="px-6 lg:px-52 p-4 min-h-screen">
+      {/* LANDING PAGE */}
+      <section className="border min-h-[100vh]">
+        LANDING AKO
+        <About />
+      </section>
+      {/* PRODUCT GRID show only 6 */}
+      <section>
+        <Cardinfo />
+      </section>
+    </main>
+  );
+};
+
+export default Home;

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Business travel",
+    "date": "July 2, 2020",
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad impedit numquam asperiores nostrum eaque harum at inventore, aliquam dolorem!",
+    "backgroundImage": "/images/cards/bag.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Vacation",
+    "date": "August 15, 2021",
+    "caption": "Lorem ipsum dolor sit amet consectetur.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quod.",
+    "backgroundImage": "/images/cards/pic.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Work from home",
+    "date": "September 10, 2022",
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aliquid.",
+    "backgroundImage": "https://example.com/work-from-home.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Tech Conference",
+    "date": "October 22, 2023",
+    "caption": "Stay updated with the latest trends in technology.",
+    "description": "Join us for a deep dive into the future of technology and innovation. Network with industry leaders and visionaries.",
+    "backgroundImage": "https://example.com/tech-conference.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Nature Retreat",
+    "date": "May 14, 2024",
+    "caption": "Reconnect with nature on this exclusive retreat.",
+    "description": "Escape the hustle and bustle of the city and immerse yourself in the tranquility of nature. Perfect for relaxation and rejuvenation.",
+    "backgroundImage": "https://example.com/nature-retreat.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Culinary Workshop",
+    "date": "December 10, 2024",
+    "caption": "Master the art of cooking with our experts.",
+    "description": "Learn to create gourmet dishes from scratch with hands-on guidance from world-renowned chefs. Perfect for food enthusiasts.",
+    "backgroundImage": "https://example.com/culinary-workshop.jpg"
+  }
+]
